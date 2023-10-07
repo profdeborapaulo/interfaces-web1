@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Cadastro de Produtos</title>
 </head>
-<body> 
-  
-  <h1>Cadastro de Produtos</h1>
-  
-  <div id="form-container">
-    <h2>Novo Produto</h2>
-    <input type="text" id="nome" placeholder="Nome do Produto">
-    <input type="number" id="quantidade" placeholder="Quantidade">
-    <input type="number" id="valor" placeholder="Valor">
-    <button onclick="cadastrarProduto()">Cadastrar</button>
-       
-    
-  </div>
-  
-  <div id="baixa-container">
-    <h2>Baixa de Itens Vendidos</h2>
-    <input type="text" id="nome-baixa" placeholder="Nome do Produto">
-    <input type="number" id="quantidade-baixa" placeholder="Quantidade">
-    <button onclick="baixarProduto()">Baixar</button>    
-  </div>
-  
-  <div id="estoque-container">
-    <h2>Estoque</h2>
-    <table>
-      <tr>
-        <th>Nome</th>
-        <th>Quantidade</th>
-        <th>Valor</th>
-      </tr>
-      <tbody id="estoque-body">
-      </tbody>
-    </table>
-  </div>
 
-  <div id="listarEstoque">
-    <h2>Estoque Atualizado</h2>
-    <table>
-      <tr>
-        <th>Nome</th>
-        <th>Quantidade</th>
-        <th>Valor</th>
-      </tr>
-      <tbody id="estoque-atualizado-body">
-      </tbody>
-    </table>
-  </div>
- 
-  <button  onclick="limparFormulario()">LIMPAR</button>
+<body>
 
+    <h1>Cadastro de Produtos</h1>
 
-  <script src="cadastroEstoque.js"></script>
+    <div id="form-container">
+        <h2>Novo Produto</h2>
+        <input type="text" id="nome" placeholder="Nome do Produto">
+        <input type="number" id="quantidade" placeholder="Quantidade">
+        <input type="number" id="valor" placeholder="Valor">
+        <button onclick="cadastrarProduto()">Cadastrar</button>
+        <!-- <button onclick="limparFormulario()">Limpar</button> -->
+    </div>
+
+    <div id="baixa-container">
+        <h2>Baixa de Itens Vendidos</h2>
+        <input type="text" id="nome-baixa" placeholder="Nome do Produto">
+        <input type="number" id="quantidade-baixa" placeholder="Quantidade">
+      <button onclick="baixarProduto()">Baixar</button>
+    </div>
+
+    <div id="estoque-container">
+        <h2>Estoque</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tbody id="estoque-body">
+            </tbody>
+        </table>
+        
+    </div>
+
+    <div id="listarEstoque">
+        <h2>Estoque Atualizado</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tbody id="estoque-atualizado-body">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="cadastroEstoque.js"></script>
 </body>
-</html>
 
+</html>
