@@ -1,0 +1,12 @@
+extensões legais para o Vs Code:
+
+preview on web server
+live preview
+dracula
+material icons
+vscode icons
+pink cat boo
+prettier
+
+
+
